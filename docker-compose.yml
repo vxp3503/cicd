@@ -1,0 +1,10 @@
+version: "3"
+services:
+  api-accelerator-services:
+    image: "${REGISTRY_ACCOUNT}/${IMAGE_NAME}:${TAG}"
+    build:
+      context: .
+      dockerfile: Dockerfile
+    #   args:
+    #     INDATA_AWS_ACCESS_KEY_ID: ${INDATA_AWS_ACCESS_KEY_ID}
+    #     INDATA_AWS_SECRET_ACCESS_KEY: ${INDATA_AWS_SECRET_ACCESS_KEY}
